@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Merienda:wght@300&family=Poppins:wght@200&family=Potta+One&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set font family and size */
+body {
+  background: #e6f2e7;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  font-family: 'Potta One';
+  color: #006644;  
+}
+
+/* Style the header */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#e6f2e7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header.navigation {
+  font-size: 1.4rem;
+  padding: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Merienda';
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a.active {
+  color: #57c977;
+  font-weight: bold;
+}
+
+/* Style the main content container */
+.container {
+  
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #e6f2e7;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero .section{
+  background: #e6f2e7;
+}
+
+.hero h1 {
+  background: #e6f2e7;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-list li {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-list li {
+    width: 33.33%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .hero {
+    padding: 80px;
+  }
+
+  .team-list li {
+    width: 25%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Navigation */
+.navigation {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navigation .logo {
+  font-size: 24px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin-left: 20px;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Main content */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+
+.hero {
+  /* background-color: #f7f7f7; */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-list li {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.team-list img {
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+  width: 200px;
+}
+
+.team-list h3 {
+  font-size: 24px;
+  margin: 20px 0 5px;
+}
+
+.team-list p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #e6f2e7;
+  padding: 20px;
+  text-align: center;
+}
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Adjust the font size of the header and section headings */
+  header.navigation {
+    font-size: 1.2rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+  /* Adjust the size of the team member images */
+  .team-list li img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* CSS for tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* Adjust the font size of the header and section headings */
+  header.navigation {
+    font-size: 1.5rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+  /* Adjust the size of the team member images */
+  .team-list li img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* CSS for desktop devices */
+@media only screen and (min-width: 901px) {
+  /* Adjust the font size of the header and section headings */
+  header.navigation {
+    font-size: 1.4rem;
+  }
+  h1, h2, h3 {
+    font-size: 2rem;
+  }
+  /* Adjust the size of the team member images */
+  .team-list li img {
+    width: 160px;
+    height: 160px;
+  }
+
+}
+
+@media screen and (max-width: 470px) {
+    .hero h1{
+      margin-top: 20px;
+    }
+    .hero{
+      padding-bottom: 0;;
+    }
+    header.navigation {
+      font-size: 10px;
+    }
+    .navigation a{
+      font-size: 13px;
+    }
+    .navigation li {
+      margin-left: 10px;
+  }
+
+  }
