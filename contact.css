@@ -1,0 +1,171 @@
+/* Contact form styles */
+*{
+  box-sizing: border-box;
+}
+body{
+  background: #e6f2e7;
+}
+.contact {
+  background-color:  #e6f2e7;
+  padding-top:0;
+  padding-bottom: 60px;
+  margin-top: 0;
+}
+  
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn a {
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    /* margin-left: 40px; */
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #006644; 
+}
+
+.btn a:hover{
+    color: #fff;
+    background-color: #296e57;  
+}
+
+  
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #2f2f2f;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2f2f2f;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    
+    width:100%;
+    background-color: #00704a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005c3d;
+  }
+
+  
+  /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {
+    .container {
+      padding: 0 30px;
+    }
+  
+    form {
+      max-width: 800px;
+    }
+  
+    label,
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 1.2rem;
+    }
+  }
+  
+   /* Medium devices (tablets, 768px and up)  */
+  @media (min-width: 991px) {
+    label {
+      width: 30%;
+      float: left;
+      margin-right: 5%;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 65%;
+      float: left;
+    }
+  
+    textarea {
+      height: 150px;
+    }
+  
+    button[type="submit"] {
+      width: 65%;
+      margin-left: 35%;
+      margin-top: 17px;
+    }
+
+    input {
+      margin-bottom: 17px;
+    }
+    
+  }
+  
+   /* Large devices (desktops, 992px and up)  */
+  /*@media (min-width: 992px) {
+    label {
+      width: 25%;
+      margin-right: 2%;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      float: left;
+      margin: 15px;
+    }
+  
+    textarea {
+      height: 200px;
+    }
+  
+    button[type="submit"] {
+      margin-left: 25%;
+    }
+  }
+   */
